@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --button-color: #E2593A
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.nav-btn {
+    background-color: var(--button-color);
+    color: unset;
+    width: 6rem;
+}
+
+.scroller {
+    height: 3rem;
+    line-height: 1.2em;
+    position: relative;
+    overflow: hidden;
+    width: 15rem;
+}
+
+.scroller > span {
+    position: absolute;
+    top: 0;
+    animation: slide 5.5s infinite;
+    font-weight:bolder;
+}
+.tombol{
+    padding: 1rem;
+    background-color: var(--button-color);
+    color: white;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+    1% {
+        top: 0.1px;
+    }
+
+    20% {
+        top: -3.5rem;
+    }
+
+    40% {
+        top: -7rem;
+    }
+    60% {
+        top: -10.5rem;
+    }
+    80% {
+        top:-14rem;
+    }
+
+}
